@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-RG226NDPQM"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RG226NDPQM');
+        </script>
+        <meta charset='utf-8'>
+        <title>Vancouver Classifieds MultiSearch</title>
+        <link href='../style.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <h1>MultiSearch</h1>
+            <h2>Vancouver, BC Classifieds</h2>
+            <form method='get'>
+                <input id='search' name='q' value=''>
+                <input type='submit' value='Search'>
+                <div></div>
+            </form>
+        </main>
+        <footer></footer>
+        <script>
+            const sites = [
+                ['FB Marketplace','https://www.facebook.com/marketplace/vancouver/search/?query='],
+                ['Craigslist','https://vancouver.craigslist.org/search/sss?purveyor=owner&query='],
+                ['Kijiji','https://www.kijiji.ca/b-vancouver/', '/k0l1700287']
+            ];
+        </script>
+        <script type='module' src='../script.js'></script>
+    </body>
+</html>
