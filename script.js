@@ -5,7 +5,7 @@ document.querySelector('form div').innerText = 'for multiple searches, separate 
 document.querySelector('footer').addEventListener('click', () => window.open('https://github.com/mica/multisearch.app'));
 if (q) {
     document.getElementById('search').value = q;
-    q = q.split(',').filter(e => {return e !== ''}).map(e => e.trim());
+    q = q.split(',').map(e => e.trim()).filter(e => {return e !== ''});
     if (q.length > 1) {
         const span = document.createElement('span');
             span.classList.add('hidden');
